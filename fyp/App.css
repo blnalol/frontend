@@ -1,0 +1,151 @@
+body, .App {
+  font-family: 'Raleway';
+  background-image: url('C:/Users/User/Desktop/React/myapp/src/images/BgImg.jpg'); /* Change the path to your image */
+  background-size: cover; /* This will cover the entire body */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  padding-top: 60px;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(79deg, #000000(0, 0%, 100%), #000000 48%, #000000);
+  background-color: #ffffff;
+  padding: 2rem; /* Adds space between the content and the border */
+  /* border: 12px solid #072949; /* Adjust width and color */
+  border-radius: 0px; /* Makes the border slightly rounded */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adds shadow for effect */
+}
+
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .auth-form-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border: 3px solid #000000;
+    background-color: #e7ff6e;
+    border-radius: 10px;
+    margin: 0.5rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    
+    /* Add these properties for flexibility */
+    width: 100%;              /* Full width on smaller screens */
+    max-width: 100px;         /* Limits the maximum width */
+    min-width: 300px;
+  }
+}
+
+label {
+  text-align: left;
+  padding: 0.25rem 0;
+}
+
+input {
+  margin: 0.3rem 0;
+  margin-bottom: 10px;
+  margin-top: 2px;
+  border: 2px solid #000000;
+  padding: 0.7rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.5); /* Slight shadow for "pop-up" effect */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button {
+  border: none;
+  background-color: #807e7e;
+  padding: 15px;
+  border-radius: 300px;
+  cursor: pointer;
+  color: #000000;
+}
+
+.link-btn {
+  background: none;
+  color: black;
+  text-decoration: underline;
+}
+
+.button-margin {
+  margin-bottom: 15px; /* Adjust this value as needed */
+}
+
+.image-preview-container {
+  display: flex;          /* Use flexbox to layout images */
+  gap: 10px;             /* Space between images */
+  flex-wrap: wrap;       /* Allow images to wrap onto the next line */
+  margin-bottom: 1rem;   /* Space below the image preview container */
+}
+
+.image-preview {
+  position: relative;     /* Position for the remove button */
+  display: inline-block;  /* Allows fixed dimensions */
+  width: 100px;          /* Fixed width for the image preview */
+  height: 100px;         /* Fixed height for the image preview */
+  overflow: hidden;       /* Hide any overflow */
+  border: 1px solid #ccc; /* Optional: border around each image */
+  border-radius: 8px;     /* Optional: rounded corners */
+}
+
+.image-preview img {
+  width: 100%;           /* Make image fit within the container */
+  height: 100%;          /* Make image fit within the container */
+  object-fit: cover;     /* Cover the entire area without distortion */
+}
+
+.remove-btn {
+  position: absolute;     /* Positioning for the remove button */
+  top: 5px;              /* Adjust to place in the corner */
+  right: 5px;            /* Adjust to place in the corner */
+  background-color: #ff4d4d; /* Red background for the remove button */
+  color: white;          /* White text */
+  border: none;          /* No border */
+  border-radius: 50%;    /* Make it circular */
+  width: 24px;           /* Fixed width */
+  height: 24px;          /* Fixed height */
+  font-size: 16px;       /* Font size */
+  text-align: center;    /* Center text */
+  cursor: pointer;       /* Pointer cursor on hover */
+  padding: 0;            /* Remove default padding */
+}
+
+/* Banner Styling */
+.top-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2e4e0;
+  color: white;
+  display: flex; /* Aligns logo and text horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 10px 20px;
+  font-size: 18px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.banner-logo {
+  height: 60px; /* Adjust height as needed */
+  margin-right: 15px; /* Space between logo and text */
+}
+
+/* Text Styling */
+.top-banner h2 {
+  margin: 0;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: center;
+}
