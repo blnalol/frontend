@@ -1,6 +1,6 @@
 body, .App {
   font-family: 'Raleway';
-  background-image: url('C:/Users/User/Desktop/React/myapp/src/images/BgImg.jpg'); /* Change the path to your image */
+  background-image: url('https://platinumlist.net/guide/wp-content/uploads/2023/03/IMG-worlds-of-adventure.webp'); /* Change the path to your image */
   background-size: cover; /* This will cover the entire body */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -38,7 +38,7 @@ body, .App {
     margin: 0.5rem;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s ease;
-    
+
     /* Add these properties for flexibility */
     width: 100%;              /* Full width on smaller screens */
     max-width: 100px;         /* Limits the maximum width */
